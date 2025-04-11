@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+
+<h1>Formulaire d'inscription</h1>
+
+<form>
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="prenom">Prénom :</label><br>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+
+    <label for="numero-apogee">Numéro d'apogée :</label><br>
+    <input type="number" id="numero-apogee" name="numero-apogee" required><br><br>
+
+    <label for="age">Âge :</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <label for="filiere">Choisissez votre filière :</label><br>
+    <select id="filiere" name="filiere" required>
+        <option value="1">1 : Génie informatique</option>
+        <option value="2">2 : Génie électrique</option>
+        <option value="3">3 : Génie mécanique</option>
+        <option value="4">4 : Génie chimie</option>
+    </select><br><br>
+
+    <label for="annee">Année :</label><br>
+    <select id="annee" name="annee" required>
+        <option value="1">1 : Première année</option>
+        <option value="2">2 : Deuxième année</option>
+    </select><br><br>
+
+    <label for="date">Date de naissance (JJ.MM.AAAA) :</label><br>
+    <input type="text" id="date" name="date" pattern="([0-2][0-9]|3[01])\.([0][1-9]|1[0-2])\.\d{4}" required><br><br>
+
+    <input type="submit" value="S'inscrire">
+</form>
+
+</body>
+
